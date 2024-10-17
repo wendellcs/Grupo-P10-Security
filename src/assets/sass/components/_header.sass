@@ -1,0 +1,68 @@
+@use '../_variables'
+@use '../components/_buttons'
+@use '../_utilities'
+@use '../_text'
+
+#header 
+    .header-top 
+        background-color: variables.$primary-color
+        text-align: center
+        position: relative
+
+        .section-title 
+            padding: 20px
+
+
+    .header-bottom
+        padding: 20px 120px
+        align-items: center
+        display: grid
+        grid-template-columns: 30% 40% 30%
+        background-color: variables.$secondary-color
+
+        @include utilities.responsive(1220px)
+            display: grid 
+            grid-template-columns: 50% 50%
+            row-gap: 10px
+            grid-template-rows: 50%
+
+            .menu-icons 
+                margin-left: auto
+                margin-right: 50px
+            
+            .login 
+                width: 200px
+                margin-left: 50px
+
+            .menu-links 
+                grid-area: 2
+                grid-column-start: 1
+                grid-column-end: 3
+                display: flex
+                justify-content: center
+
+        .menu-icons, .menu-links
+            background-color: variables.$bg-light-color
+            border-radius: 12px
+        
+            ul
+                display: flex
+                gap: 20px
+
+        .menu-icons 
+            width: 200px
+            padding: 10px 20px
+
+            a 
+                display: flex
+                align-items: center
+                font-size: variables.$icon-size
+                color: #fff
+                
+          
+        .menu-links
+            margin: 0 auto
+            padding: 10px 20px
+
+        button 
+            margin-left: auto

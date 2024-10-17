@@ -1,0 +1,121 @@
+@use '../_variables'
+@use '../_utilities'
+@use '../_text'
+
+#main     
+    .banner
+        padding: 60px 120px 
+        height: 638px
+        background: url('../../images/bg-image.png') no-repeat
+        background-size: cover
+
+        &-container
+            height: 480px
+            background: url('../../images/security-cams.png') no-repeat
+            background-size: cover
+            border-radius: 36px
+            filter: grayscale(.85)
+
+            &-content 
+                border-radius: 36px 0 0 36px
+                background-color: variables.$bg-dark-color
+                box-shadow: 10px 0 8px variables.$bg-dark-color
+                height: 480px
+                width: 50%
+                max-width: 550px
+                @extend %center-elements
+
+
+                &-title 
+                    text-align: center
+                    margin-bottom: 40px
+                    color: variables.$text-color
+                    font-size: text.$main-title-size
+
+                .text
+                    width: 400px
+                    margin: 0 auto
+
+                    &:first-of-type
+                        margin-bottom: 20px
+
+    #about 
+        padding: 0 120px
+
+        .section-title
+            margin: 60px 0 40px 0
+
+        .about-container 
+            display: flex
+            height: 640px
+            width: 100%
+            background-color: variables.$primary-color
+            border-radius: 56px
+            padding: 30px 60px
+            gap: 40px
+            justify-content: center
+
+            img 
+                width: 100%
+                border-radius: 36px
+        
+            &-content 
+                background-color: variables.$bg-dark-color
+                border-radius: 36px
+                padding: 0 45px
+                max-width: 510px
+                min-width: 360px
+                @extend %center-elements
+
+                .text 
+                    &:first-of-type
+                        margin: 50px 0 30px
+    
+    #mission 
+        .mission-container 
+            background-color: variables.$bg-dark-color 
+            border-radius: 36px
+            height: 280px
+            width: 70%
+            max-width: 800px
+            padding: 0 40px
+            margin: 100px auto
+            @extend %center-elements
+
+            .block-title 
+                margin-bottom: 20px
+
+    #services
+        padding: 0 120px
+
+        .services-container
+            display: flex
+            flex-direction: column
+
+            .services-box
+                margin-top: 80px
+                display: flex
+                gap: 50px
+                justify-content: center
+                
+                figure
+                    width: 550px
+                    background-color: variables.$bg-dark-color
+                    border-radius: 56px
+
+                    figcaption 
+                        padding: 25px
+                        
+                        .block-title 
+                            margin-bottom: 20px
+                        
+                    &:first-of-type
+                        img 
+                            border-radius: 56px 56px 0 0
+    
+    #whyChooseUs 
+        padding: 0 120px
+
+        .section-title 
+            margin-top: 80px
+            margin-bottom: 60px

@@ -1,0 +1,11 @@
+@use './_variables'
+
+%center-elements
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    
+@mixin responsive($width)
+    @media (max-width: $width) 
+        @content

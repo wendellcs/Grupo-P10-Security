@@ -1,0 +1,28 @@
+@use '../_variables'
+
+.btn 
+    width: 125px
+    font-weight: bold
+    height: 40px
+    border-radius: 12px
+    border: 1px solid variables.$light-color
+    color: variables.$text-color
+    background-color: variables.$secondary-color
+
+    &.cta 
+        width: 150px
+        border: 0
+
+        &.contact 
+            // Provisório
+            background-color: #249c34f6
+        
+        &.services 
+            width: 200px
+            margin: 40px auto
+
+    &.reason 
+        background-color: transparent
+
+        &:not(:first-of-type)
+            margin-left: 10px
