@@ -1,16 +1,17 @@
-import Home from "./pages/Home"
-import './assets/sass/_reset.sass'
 import { useEffect } from "react"
+import { BrowserRouter } from "react-router-dom"
+import RoutesApp from "./services/routes"
+
+import './assets/sass/_reset.sass'
 function App() {
   useEffect(() => {
     document.title = 'Grupo P10 | Security'
   }, [])
-  // Fazer o sistema de rotas
-  return (
-      <>
-        <Home/>
-      </>
 
+  return (
+    <BrowserRouter>
+      <RoutesApp />
+    </BrowserRouter>
   )
 }
 

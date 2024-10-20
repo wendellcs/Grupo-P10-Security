@@ -1,6 +1,7 @@
 @use '../_variables'
+@use '../_utilities'
 
-.btn 
+.btn
     width: 125px
     font-weight: bold
     height: 40px
@@ -26,3 +27,8 @@
 
         &:not(:first-of-type)
             margin-left: 10px
+
+    &.login 
+        @extend %center-elements
+        align-items: center
+        margin-left: auto
