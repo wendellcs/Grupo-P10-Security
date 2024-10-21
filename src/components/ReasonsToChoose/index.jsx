@@ -13,9 +13,11 @@ export default function ReasonsToChoose(){
 
     return (
         <div className='reasons-container'>
-            <h3 className="block-title">{reasonTitle}</h3>
+            <div className="reason">
+                <h3 className="block-title">{reasonTitle}</h3>
 
-            <p className="text description">{reasonDescription}</p>
+                <p className="text description">{reasonDescription}</p>
+            </div>
 
             <div className="buttons-container">
                 {reasons.map((reason, i) => {

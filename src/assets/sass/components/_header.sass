@@ -39,6 +39,14 @@
                 display: flex
                 justify-content: center
 
+        @include utilities.responsive(660px)
+            padding: 20px 0
+
+        @include utilities.responsive(525px)
+            display: block
+            .menu-icons , .login, .menu-links 
+                display: none
+
         .menu-icons, .menu-links
             background-color: variables.$bg-light-color
             border-radius: 12px

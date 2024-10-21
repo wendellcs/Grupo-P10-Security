@@ -1,0 +1,30 @@
+@use '../_variables'
+@use '../_utilities'
+
+.container-mobile-menu
+    &:not(.menu-container-icon)
+        text-align: center
+
+    &-icons 
+        margin: 20px 0 40px 0
+        border-top: 1px solid variables.$light-color
+        padding-top: 20px
+
+        li 
+            display: inline
+            &:not(:first-of-type)
+                margin-left: 15px
+
+            a 
+                font-size: variables.$icon-size
+                color: variables.$primary-icon-color
+
+    &-links 
+        margin-bottom: 40px
+        li 
+            &:not(:first-of-type)
+                margin-top: 15px
+                
+    .mobile-menu-login
+        padding: 7px 50px
+        

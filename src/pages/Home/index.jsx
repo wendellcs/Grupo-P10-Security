@@ -32,7 +32,7 @@ export default function Home(){
             <section id="about">
                 <h2 className="section-title">Quem somos?</h2>
                 <div className="about-container">
-                    <img src={securityImage} alt="Security image" />
+                    <img className="security-image" src={securityImage} alt="Security image" />
 
                     <div className="about-container-content">
                         <h3 className="block-title">GRUPO P10</h3>
@@ -56,7 +56,7 @@ export default function Home(){
 
                 <div className="services-container">
                     <div className="services-box">
-                        <figure>
+                        <figure className="fig">
                             <img src={bodyguard} alt="Descrição da imagem"/>
                             <figcaption>
                                 <h3 className="block-title">Segurança</h3>
@@ -64,7 +64,7 @@ export default function Home(){
                             </figcaption>
                         </figure>
 
-                        <figure>
+                        <figure className="fig">
                             <img src={armedScolt} alt="Descrição da imagem"/>
                             <figcaption>
                                 <h3 className="block-title">Escolta armada</h3>
