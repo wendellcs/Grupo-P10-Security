@@ -30,7 +30,7 @@ export default function Home(){
             </section>
 
             <section id="about">
-                <h2 className="section-title">Quem somos?</h2>
+                <h2 className="section-title">Nossa história</h2>
                 <div className="about-container">
                     <img className="security-image" src={securityImage} alt="Security image" />
 
@@ -59,8 +59,8 @@ export default function Home(){
                         <figure className="fig">
                             <img src={bodyguard} alt="Descrição da imagem"/>
                             <figcaption>
-                                <h3 className="block-title">Segurança</h3>
-                                <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sequi doloribus maxime incidunt tempora pariatur dolore veritatis qui! Necessitatibus nam ipsum odio laudantium quod itaque aliquid nihil nobis perferendis dolorem!</p>
+                                <h3 className="block-title">Segurança pessoal</h3>
+                                <p className="text">Nossa equipe é treinada e experiente, pronta para identificar e neutralizar riscos. Trabalhamos em colaboração para atender às necessidades específicas de cada cliente, utilizando tecnologia avançada para monitoramento e resposta rápida. Com nossa equipe, você pode ter a tranquilidade de estar seguro em todas as situações.</p>
                             </figcaption>
                         </figure>
 
@@ -68,7 +68,7 @@ export default function Home(){
                             <img src={armedScolt} alt="Descrição da imagem"/>
                             <figcaption>
                                 <h3 className="block-title">Escolta armada</h3>
-                                <p className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p className="text">Oferecemos escolta armada para garantir a segurança em deslocamentos de clientes e bens valiosos. Nossa equipe treinada utiliza veículos equipados e tecnologia de monitoramento para proporcionar proteção em todas as situações. Com nossa escolta armada, você pode viajar com tranquilidade, sabendo que está seguro.</p>
                             </figcaption>
                         </figure>
                     </div>
