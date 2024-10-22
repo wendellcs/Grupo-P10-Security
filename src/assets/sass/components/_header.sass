@@ -11,6 +11,12 @@
         .section-title 
             padding: 20px
 
+            @include utilities.responsive(540px)
+                padding: 10px
+
+
+
+
     .header-bottom
         padding: 20px 120px
         align-items: center
@@ -42,7 +48,7 @@
         @include utilities.responsive(660px)
             padding: 20px 0
 
-        @include utilities.responsive(525px)
+        @include utilities.responsive(800px)
             display: block
             .menu-icons , .login, .menu-links 
                 display: none

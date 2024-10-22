@@ -2,6 +2,11 @@
 @use '../_utilities'
 
 .container-mobile-menu
+    display: none
+
+    @include utilities.responsive(800px)
+        display: block
+        
     &:not(.menu-container-icon)
         text-align: center
 

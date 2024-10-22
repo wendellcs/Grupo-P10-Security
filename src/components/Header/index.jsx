@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin, FaFacebook  } from "react-icons/fa";
@@ -7,27 +6,8 @@ import '../../assets/sass/components/_header.sass'
 import MobileMenu from '../Mobile-menu';
 
 export default function Header(){
-    const [simpleHeader, setSimpleHeader] = useState(true)
-
-    function togleSimpleHeader(){
-        setSimpleHeader(!simpleHeader)
-    }
-
     return (
         <header id="header">
-
-            {/* <div className="simple-header" style={{display: simpleHeader ? 'flex' : 'none'}}>
-                <nav className="menu-icons">
-                    <ul>
-                        <li><a href="#"><FaInstagram /></a></li>
-                        <li><a href="#"><FaLinkedin /></a></li>
-                        <li><a href="#"><FaFacebook /></a></li>
-                        <li><a href="#"><BsFillThreadsFill/></a></li>
-                    </ul>
-                </nav>
-
-                <h2 className="section-title">Grupo P10 Security</h2>
-            </div> */}
             <div className="header-top" >
                 <h2 className="section-title">Grupo P10 Security</h2>
             </div> 

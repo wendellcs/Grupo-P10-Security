@@ -73,7 +73,7 @@ export default function Home(){
                         </figure>
                     </div>
 
-                    <button className="btn cta services">Ver serviços</button>
+                    <button className="btn cta services">Mais serviços</button>
                 </div>
             </section>
 

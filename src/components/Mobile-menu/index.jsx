@@ -23,13 +23,6 @@ export default function MobileMenu(){
         setWindowWidth(window.innerWidth)
     }
 
-    useEffect(() => {
-        window.addEventListener('resize', (e) => {
-            handleMenuMobileVisibility(e.target.value)
-        })
-        return () => window.removeEventListener('resize', handleMenuMobileVisibility)
-    }, [])
-
     // Fazer animação para abrir e fechar o menu
 
     function handleClick(){
