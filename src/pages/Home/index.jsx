@@ -19,11 +19,12 @@ export default function Home(){
                         <h1 className="banner-container-content-title">Grupo P10</h1>
 
                         <p className="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis exercitationem ipsum, et dignissimos vero omnis libero. Architecto voluptatibus aut hic autem ullam. Vero voluptatem illo quod quam enim quos.
+                            Coloque sua empresa aos cuidado do Grupo P10 e viva uma jornada fascinante que une tradição e modernidade. 
+                            A empresa preserva os valores ancestrais de honra, lealdade e excelência, ao mesmo tempo em que se mantém na vanguarda da tecnologia em segurança. 
                         </p>
 
                         <p className="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis exercitationem ipsum, et dignissimos vero omnis libero. Architecto voluptatibus aut hic autem ullam. Vero voluptatem illo quod quam enim quos.
+                        Essa combinação única permite ao Grupo P10 oferecer soluções personalizadas e eficazes para uma ampla gama de clientes, incluindo grandes empresas como BRASKEM, NESTLÉ e SHELL.
                         </p>
                     </div>
                 </div>
