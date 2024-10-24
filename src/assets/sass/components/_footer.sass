@@ -3,7 +3,7 @@
 
 #footer 
     margin-top: 100px
-    background: url('./../../../assets/images/footer-bg.png') no-repeat
+    background-repeat: no-repeat
     background-size: cover
 
     .footer-top
@@ -31,7 +31,7 @@
     .footer-middle, .footer-bottom
         background-color: variables.$secondary-color
 
-    .footer-middle
+    .footer-middle, .short-footer
         margin-bottom: 5px
 
         &-links 
@@ -50,6 +50,33 @@
                     li 
                         margin: 10px
 
-    .footer-bottom
+    .footer-bottom, .short-footer-copyright
         p 
             padding: 20px
+
+    .short-footer 
+        display: flex
+        padding: 0 120px
+        height: 136px
+        align-items: center
+        position: relative
+
+        &-links 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            
+        @include utilities.responsive(950px)
+            flex-direction: column
+            justify-content: center
+
+            &-links 
+                padding: 0
+                position: inherit
+                transform: none
+                top: 0
+                left: 0
+
+        @include utilities.responsive(580px)
+            padding: 0 10px

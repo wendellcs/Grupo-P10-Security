@@ -41,6 +41,8 @@
                 grid-column-end: 3
                 display: flex
                 justify-content: center
+            
+
 
         @include utilities.responsive(660px)
             padding: 20px 0
@@ -48,6 +50,9 @@
         @include utilities.responsive(800px)
             display: block
             .menu-icons , .login, .menu-links 
+                display: none
+                
+            .section-title.login-page-title
                 display: none
 
         .menu-icons, .menu-links
@@ -73,21 +78,8 @@
             margin: 0 auto
             padding: 10px 20px
 
+        .login-page-title 
+            color: variables.$light-color
+
         button 
             margin-left: auto
-
-    .simple-header
-        background-color: variables.$secondary-color
-        display: grid 
-        grid-template-columns: repeat(2 , 50%) 
-        align-items: center
-        height: 80px
-        padding: 0 120px 
-
-        .menu-icons 
-            ul
-                display: flex
-                
-        .section-title
-            color: variables.$text-color 
-
