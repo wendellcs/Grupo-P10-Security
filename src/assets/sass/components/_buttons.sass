@@ -29,6 +29,12 @@
             margin-left: 10px
 
     &.login 
-        @extend %center-elements
-        align-items: center
+        @include utilities.center-elements($justify: center, $align: center)
         margin-left: auto
+
+    &.form 
+        display: block
+        width: 140px
+        background: transparent
+        margin: 40px auto
+    

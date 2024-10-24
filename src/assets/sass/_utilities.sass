@@ -1,9 +1,10 @@
 @use './_variables'
 
-%center-elements
-    display: flex
-    flex-direction: column
-    justify-content: center
+@mixin center-elements($justify: none, $align: none, $direction: none) 
+  display: flex
+  flex-direction: $direction
+  justify-content: $justify
+  align-items: $align
 
     
 @mixin responsive($width)

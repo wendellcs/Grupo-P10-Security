@@ -1,7 +1,7 @@
 @use './_variables'
 
 $main-title-size: 3.6rem 
-$title-size: 2.8rem
+$title-size: 2.6rem
 $text-size: 1.6rem
 $block-title-size: 2.4rem
 $navbar-text-size: 1.8rem 
@@ -9,19 +9,29 @@ $navbar-text-size: 1.8rem
 button 
     text-size: $text-size
 
-.section-title
-    text-align: center
-    font-size: $title-size
+.main-title , .section-title
     color: variables.$title-color
+    text-align: center
+
+.main-title
+    padding: 10px
+    font-size: $main-title-size
+
+.section-title
+    font-size: $title-size
 
 .block-title    
     font-size: $block-title-size
-    color: variables.$text-color
+    color: variables.$light-color
     text-align: center
 
 .footer-title 
     font-size: $block-title-size
     color: variables.$title-secondary-color
+
+.link 
+    font-size: $navbar-text-size
+    color: variables.$text-color
 
 .text 
     color: variables.$text-color
@@ -29,6 +39,16 @@ button
     line-height: 140%
     text-align: center
 
-.link 
-    font-size: $navbar-text-size
+.text-label 
+    font-size: 1.6rem
+    color: variables.$light-color
+
+.form-text , .form-text-link
+    font-size: 1.3rem
     color: variables.$text-color
+    text-align: center
+    margin-bottom: 5px
+
+.form-text-link
+    text-decoration: underline
+    cursor: pointer

@@ -13,7 +13,7 @@ export default function Header({shortHeader}){
         <header id="header">
             {!shortHeader && (
                 <div className="header-top" >
-                    <h2 className="section-title">Grupo P10 Security</h2>
+                    <h1 className="main-title">Grupo P10 Security</h1>
                 </div> 
             )}
            
@@ -42,7 +42,7 @@ export default function Header({shortHeader}){
                 </>
                 )}
                 { shortHeader && (
-                    <h1 className='section-title login-page-title'>Grupo P10 Security</h1>
+                    <h1 className='main-title login-page-main-title'>Grupo P10 Security</h1>
                 )}
             </div>
         </header>

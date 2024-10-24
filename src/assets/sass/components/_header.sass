@@ -39,20 +39,15 @@
                 grid-area: 2
                 grid-column-start: 1
                 grid-column-end: 3
-                display: flex
-                justify-content: center
+                @include utilities.center-elements($justify: center) 
             
-
-
         @include utilities.responsive(660px)
             padding: 20px 0
 
         @include utilities.responsive(800px)
             display: block
-            .menu-icons , .login, .menu-links 
-                display: none
-                
-            .section-title.login-page-title
+
+            .menu-icons , .login, .menu-links, .section-title.login-page-title
                 display: none
 
         .menu-icons, .menu-links
@@ -68,17 +63,15 @@
             padding: 10px 20px
 
             a 
-                display: flex
-                align-items: center
+                @include utilities.center-elements($align: center) 
                 font-size: variables.$icon-size
-                color: #fff
-                
-          
+                color: variables.$light-color
+
         .menu-links
             margin: 0 auto
             padding: 10px 20px
 
-        .login-page-title 
+        .login-page-main-title 
             color: variables.$light-color
 
         button 

@@ -21,6 +21,7 @@
             background-size: cover
             border-radius: 36px
             filter: grayscale(.85)
+
             @include utilities.responsive(1040px)
                 width: 100%
                 background-position: 100% 
@@ -28,7 +29,6 @@
             @include utilities.responsive(540px)
                 border-radius: 0
                   
-
             &-content 
                 border-radius: 36px 0 0 36px
                 background-color: variables.$bg-dark-color
@@ -36,7 +36,7 @@
                 height: 480px
                 width: 50%
                 max-width: 550px
-                @extend %center-elements
+                @include utilities.center-elements($justify: center, $direction: column) 
 
                 @include utilities.responsive(1040px)
                     width: 100%
@@ -80,7 +80,7 @@
             margin: 60px 0 40px 0
 
         .about-container 
-            display: flex
+            @include utilities.center-elements($justify: center) 
             height: 640px
             width: 100%
             background-color: variables.$primary-color
@@ -88,15 +88,13 @@
             padding: 30px 60px
             gap: 40px
             justify-content: center
-          
             
             @include utilities.responsive(965px)
                 padding: 30px 20px 
 
             @include utilities.responsive(950px)
-                flex-direction: column
+                @include utilities.center-elements($align: center, $direction: column) 
                 height: auto
-                align-items: center
 
                 .security-image
                     width: 100% 
@@ -118,7 +116,7 @@
                 border-radius: 36px
                 padding: 0 45px
                 max-width: 510px
-                @extend %center-elements
+                @include utilities.center-elements($justify: center, $direction: column) 
 
                 @include utilities.responsive(950px)
                     max-width: 100%
@@ -142,7 +140,7 @@
             max-width: 800px
             padding: 0 40px
             margin: 100px auto
-            @extend %center-elements
+            @include utilities.center-elements($justify: center, $direction: column) 
 
             @include utilities.responsive(490px)
                 width: 95%
@@ -167,23 +165,16 @@
                         figcaption 
                             padding: 10px
 
-                        
-                    &:first-of-type
-
-
         .services-container
-            display: flex
-            flex-direction: column
+            @include utilities.center-elements($direction: column) 
             
             .services-box
                 margin-top: 80px
-                display: flex
                 gap: 50px
-                justify-content: center
+                @include utilities.center-elements($justify: center) 
 
                 @include utilities.responsive(1185px)
-                    flex-direction: column
-                    align-items: center
+                    @include utilities.center-elements($align: center, $direction: column) 
                 
                 figure
                     width: 550px
@@ -203,7 +194,6 @@
     #whyChooseUs 
         padding: 0 120px
 
-        
         @include utilities.responsive(1185px)
             padding: 0
 
