@@ -5,11 +5,18 @@
     min-height: 100vh
     @include utilities.center-elements($justify: space-between, $direction: column)
 
+    @include utilities.responsive(400px)
+        #footer 
+            margin-top: 20px
+
 .login-page
     @include utilities.center-elements($justify: space-between, $direction: column)
 
     &-title 
         margin: 50px  0
+
+        @include utilities.responsive(400px)
+            margin: 20px 0
 
     .form-login
         flex: 1
@@ -19,6 +26,10 @@
         background-color: variables.$bg-dark-color
         border-radius: 36px
         padding: 70px 50px
+
+        @include utilities.responsive(400px)
+            border-radius: 0
+            padding: 30px
 
         .form-box 
             display: flex

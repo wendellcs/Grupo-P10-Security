@@ -9,7 +9,6 @@ import MobileMenu from '../Mobile-menu';
 export default function Header({shortHeader}){
 
     return (
-
         <header id="header">
             {!shortHeader && (
                 <div className="header-top" >
