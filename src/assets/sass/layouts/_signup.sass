@@ -1,0 +1,33 @@
+@use '../_utilities'
+@use '../_variables'
+
+.container-signup 
+    min-height: 100vh
+    @include utilities.center-elements($justify: space-between, $direction: column)
+
+    @include utilities.responsive(400px)
+        #footer 
+            margin-top: 20px
+
+    .signup-page 
+        .signup-page-title
+            margin: 20px 0
+        .form-signup
+            @include utilities.form-style($maxWidth: 500px)
+
+            .form-box
+                &:first-of-type
+                    margin-top: 20px
+                
+
+            input 
+                @include utilities.input-style()
+
+            .box-container 
+                display: grid
+                grid-template-columns: repeat(2, 50%)
+                align-items: center
+                gap: 10px
+
+                input 
+                    width: 190px

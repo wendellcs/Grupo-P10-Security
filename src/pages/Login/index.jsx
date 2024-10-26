@@ -32,7 +32,7 @@ export default function Login(){
 
                         <div className="form-text">
                             <p className='form-text'>Ainda não possui uma conta?</p>
-                            <a className='form-text-link'>Clique aqui para criar sua conta</a>
+                            <Link className='form-text-link' to={'/signup'}>Clique aqui para criar sua conta</Link>
                         </div>
                     </div>
                 </form>
