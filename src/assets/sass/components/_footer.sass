@@ -59,21 +59,16 @@
         margin: 0
 
         &-links 
-            position: absolute
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-            
-        @include utilities.responsive(950px)
-            @include utilities.center-elements($justify: center, $direction: column) 
+            margin-left: auto
 
-            &-links 
-                padding: 0
-                position: inherit
-                transform: none
-                top: 0
-                left: 0
+        @include utilities.responsive(760px)
+            height: 200px
+            background-color: variables.$secondary-color
+            background-image: none
+            flex-direction: column
 
-        @include utilities.responsive(580px)
-            padding: 0 10px
+            .short-footer-links 
+                margin: 0
 
+        @include utilities.responsive(660px)
+            padding: 0 12px
