@@ -1,10 +1,11 @@
 @use './_variables'
 
-@mixin center-elements($justify: none, $align: none, $direction: none) 
+@mixin center-elements($justify: none, $align: none, $direction: none, $a-content: none) 
   display: flex
   flex-direction: $direction
   justify-content: $justify
   align-items: $align
+  align-content: $a-content
 
 @mixin form-style($maxWidth: 400px, $mobile: 400px)
   flex: 1
