@@ -16,12 +16,6 @@ function MenuIcon({handleClick, clicked}) {
 
 export default function MobileMenu(){
     const [clicked, setClicked] = useState(false)
-    const [windowWidth, setWindowWidth] = useState()
-
-    function handleMenuMobileVisibility(){
-        console.log(windowWidth)
-        setWindowWidth(window.innerWidth)
-    }
 
     // Fazer animação para abrir e fechar o menu
 
@@ -45,13 +39,10 @@ export default function MobileMenu(){
                     </nav>
                     <nav className="container-mobile-menu-links">
                         <ul>
-                            <li><a href="#" className="link">Home</a></li>
-
-                            <li><a href="#" className="link">Sobre nós</a></li>
-                
-                            <li><a href="#" className="link">Contato</a></li>
-                        
-                            <li><a href="#" className="link">Serviços</a></li> 
+                        <li><Link to={'/'} className="link">Home</Link></li>
+                        <li><Link to={'/about'} className="link">Sobre nós</Link></li>
+                        <li><Link to={'/contact'} className="link">Contato</Link></li>
+                        <li><Link to={'/services'} className="link">Serviços</Link></li>
                         </ul>
                     </nav>
                     <Link to='/Login' className="btn mobile-menu-login link">Entrar</Link>

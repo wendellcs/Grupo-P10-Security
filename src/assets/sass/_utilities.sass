@@ -7,14 +7,14 @@
   align-items: $align
   align-content: $a-content
 
-@mixin form-style($maxWidth: 400px, $mobile: 400px)
+@mixin form-style($maxWidth: 400px, $mobile: 400px, $padding: 70px 50px)
   flex: 1
   width: 100%
   max-width: $maxWidth
   margin: 0 auto
   background-color: variables.$bg-dark-color
   border-radius: 36px
-  padding: 70px 50px
+  padding: $padding
 
   @include responsive($mobile)
     border-radius: 0

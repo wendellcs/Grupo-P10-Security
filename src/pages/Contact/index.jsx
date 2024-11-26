@@ -1,19 +1,19 @@
-import '../../assets/sass/layouts/_getintouch.sass'
+import '../../assets/sass/layouts/_contact.sass'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-export default function GetInTouch(){
+export default function contact(){
     return (
-        <div className='container-getInTouch'>
+        <div className='container-contact'>
             <Header shortHeader={true}/>
 
-            <main className='getInTouch-page'>
-                <h2 className='section-title getInTouch-page-title'>Fale conosco</h2>
-                <form className='form-getInTouch'>
+            <main className='contact-page'>
+                <h2 className='section-title contact-page-title'>Fale conosco</h2>
+                <form className='form-contact'>
 
                     <h3 className='block-title'>Envie sua mensagem</h3>
-                    <div className='form-getInTouch-content'>
-                        <div className="form-getInTouch-content-top">
+                    <div className='form-contact-content'>
+                        <div className="form-contact-content-top">
                             <div className="form-box">
                                 <label className='text-label'>Nome</label>
                                 <input type='text' placeholder='Digite seu email'/>
@@ -38,7 +38,7 @@ export default function GetInTouch(){
                             <textarea placeholder='Digite sua mensagem'></textarea>
                         </div>
 
-                        <button className='btn form getInTouch'> Enviar </button>
+                        <button className='btn form contact'> Enviar </button>
                     </div>
 
                 </form>

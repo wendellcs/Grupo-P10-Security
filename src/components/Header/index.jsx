@@ -16,7 +16,7 @@ export default function Header({shortHeader}){
                 </div> 
             )}
            
-            <div className="header-bottom">
+            <div className={!shortHeader ? "header-bottom" : "header-bottom shortHeader"}>
                 <MobileMenu/>
                 <nav className="menu-icons">
                     <ul>
@@ -26,23 +26,20 @@ export default function Header({shortHeader}){
                         <li><a href="#"><BsFillThreadsFill/></a></li>
                     </ul>
                 </nav>
-                { !shortHeader && (
-                    <>
-                    <nav className="menu-links">
-                        <ul>
-                            <li><a href="#" className="link">Home</a></li>
-                            <li><a href="#" className="link">Sobre nós</a></li>
-                            <li><a href="#" className="link">Contato</a></li>
-                            <li><a href="#" className="link">Serviços</a></li> 
-                        </ul>
-                    </nav>
+                
+                <nav className={!shortHeader ? "menu-links" : "menu-links shortHeader"}>
+                    <ul>
+                        <li><Link to={'/'} className="link">Home</Link></li>
+                        <li><Link to={'/about'} className="link">Sobre nós</Link></li>
+                        <li><Link to={'/contact'} className="link">Contato</Link></li>
+                        <li><Link to={'/services'} className="link">Serviços</Link></li>
+                    </ul>
+                </nav>
 
+                {!shortHeader && (
                     <Link to='/Login' className="btn login link">Entrar</Link>
-                </>
                 )}
-                { shortHeader && (
-                    <h1 className='main-title login-page-main-title'>Grupo P10 Security</h1>
-                )}
+         
             </div>
         </header>
     

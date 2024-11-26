@@ -18,37 +18,42 @@
         padding: 20px 120px
         align-items: center
         display: grid
-        grid-template-columns: 30% 40% 30%
+        grid-template-columns: 20% 60% 20%
         background-color: variables.$secondary-color
 
-        @include utilities.responsive(1220px)
-            display: grid 
-            grid-template-columns: 50% 50%
-            row-gap: 10px
-            grid-template-rows: 50%
-
-            .menu-icons 
-                margin-left: auto
-                margin-right: 50px
+        &.shortHeader 
+            display: flex
+            justify-content: space-between
             
-            .login 
-                width: 200px
-                margin-left: 50px
+        @include utilities.responsive(1220px)
+            &:not(.shortHeader)
+                display: grid 
+                grid-template-columns: 50% 50%
+                row-gap: 10px
+                grid-template-rows: 50%
 
-            .menu-links 
-                grid-area: 2
-                grid-column-start: 1
-                grid-column-end: 3
-                @include utilities.center-elements($justify: center) 
+                .menu-icons 
+                    margin-left: auto
+                    margin-right: 50px
+                
+                .login 
+                    width: 200px
+                    margin-left: 50px
+
+                .menu-links 
+                    grid-area: 2
+                    grid-column-start: 1
+                    grid-column-end: 3
+                    @include utilities.center-elements($justify: center) 
             
         @include utilities.responsive(660px)
             padding: 20px 0
 
-        @include utilities.responsive(800px)
-            display: block
+        @include utilities.responsive(850px)
+            display: block !important
 
             .menu-icons , .login, .menu-links, .login-page-main-title
-                display: none
+                display: none !important
 
         .menu-icons, .menu-links
             background-color: variables.$bg-light-color
@@ -70,6 +75,9 @@
         .menu-links
             margin: 0 auto
             padding: 10px 20px
+
+            &.shortHeader 
+                margin: 0
 
         .login-page-main-title 
             color: variables.$light-color
