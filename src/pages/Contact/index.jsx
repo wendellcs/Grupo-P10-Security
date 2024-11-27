@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 
 export default function contact(){
     return (
-        <div className='container-contact'>
+        <div className='container'>
             <Header shortHeader={true}/>
 
             <main className='contact-page'>
