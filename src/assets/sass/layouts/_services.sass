@@ -1,0 +1,73 @@
+@use '../_variables'
+@use '../_utilities'
+
+.services-page 
+    margin-bottom: 50px
+    
+    h2 
+        margin: 50px
+
+    &-content 
+        max-width: 725px
+        width: 100% 
+        background-color: variables.$bg-dark-color
+        margin: 0 auto
+        border-radius: 36px
+        padding: 40px 100px
+        text-align: center
+
+        .title-container
+            @include utilities.center-elements(center , center )
+            border-radius: 8px
+            margin: 20px 0 5px 0
+            height: 50px
+
+            &:hover 
+                background: variables.$bg-light-color
+
+            h3:not(.service-box-title) 
+                margin-bottom: 40px
+
+
+            .arrow 
+                font-size: 4rem
+                color: variables.$light-color
+                margin-left: -5px
+                transition: .3s
+
+                &.active 
+                    transform: rotate(180deg)
+
+        &-services 
+            .service-box 
+                cursor: pointer
+
+                &-title 
+                    color: variables.$text-color
+                    font-size: 1.8rem
+                    margin: 30px 0 
+
+
+                .wrapper 
+                    display: grid 
+                    grid-template-rows: 0fr
+                    overflow: hidden
+                    transition: .3s 
+                    
+                    &.active 
+                        grid-template-rows: 1fr
+                        background-color: variables.$bg-dark-color
+                        border-radius: 36px
+                        padding: 40px     
+
+                    .expandable
+                        min-height: 0
+
+                        .service-subtitle 
+                            font-size: 1.6rem
+                            color: variables.$text-color
+                            font-weight: bold
+                            margin: 15px 0
+
+                        .text.service 
+                            font-size: 1.4rem
