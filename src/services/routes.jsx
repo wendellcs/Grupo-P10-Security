@@ -3,9 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
-import Contact from "../pages/contact";
-import About from "../pages/about";
-import Services from "../pages/services";
+import Contact from "../pages/Contact";
+import About from "../pages/About";
+import Services from "../pages/Services";
 
 import NotFound from "../pages/NotFound";
 
