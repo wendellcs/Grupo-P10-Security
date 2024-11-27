@@ -1,6 +1,7 @@
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin, FaFacebook  } from "react-icons/fa";
 import { BsFillThreadsFill } from "react-icons/bs";
+import { Link } from "react-router-dom"
 
 import '../../assets/sass/components/_footer.sass'
 
@@ -31,9 +32,8 @@ export default function Footer({shortFooter}){
                     <div className="footer-middle">
                         <nav className="footer-middle-links">
                             <ul>
-                                <li><a href="#" className="link">Sobre nós</a></li>
-                                <li><a href="#" className="link">Nossos valores</a></li>
-                                <li><a href="#" className="link">Contato</a></li>
+                                <Link className="link" to={'/about'}>Sobre nós</Link>
+                                <Link className="link" to={'/contact'}>Contato</Link>
                             </ul>
                         </nav>
                     </div>
@@ -51,9 +51,8 @@ export default function Footer({shortFooter}){
 
                     <nav className="short-footer-links">
                         <ul>
-                            <li><a href="#" className="link">Sobre nós</a></li>
-                            <li><a href="#" className="link">Nossos valores</a></li>
-                            <li><a href="#" className="link">Contato</a></li>
+                            <Link className="link" to={'/about'}>Sobre nós</Link>
+                            <Link className="link" to={'/contact'}>Contato</Link>
                         </ul>
                     </nav>
                 </div>

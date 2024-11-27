@@ -1,4 +1,4 @@
-import '../../assets/sass/layouts/home.sass'
+import '../../assets/sass/layouts/_home.sass'
 
 import securityImage from './../../assets/images/security.png'
 import bodyguard from './../../assets/images/bodyguard.png'
@@ -7,6 +7,7 @@ import armedScolt from './../../assets/images/armed-scolt.png'
 import Header from "../../components/Header";
 import ReasonsToChoose from "../../components/ReasonsToChoose";
 import Footer from "../../components/Footer";
+import { Link } from 'react-router-dom';
 
 export default function Home(){
     return (
@@ -74,7 +75,7 @@ export default function Home(){
                         </figure>
                     </div>
 
-                    <button className="btn cta services">Mais serviços</button>
+                    <Link className="link services" to={'/services'}>Mais serviços</Link>
                 </div>
             </section>
 
