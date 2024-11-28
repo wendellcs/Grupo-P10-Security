@@ -40,3 +40,39 @@
 @mixin responsive($width)
     @media (max-width: $width) 
         @content
+
+%dropdown-style
+  @include center-elements(center , center )
+  border-radius: 8px
+  margin: 20px 0 5px 0
+  height: 50px
+
+  &:hover 
+    background: variables.$bg-light-color
+
+  h3:not(.service-box-title) 
+    margin-bottom: 40px
+      
+  .arrow 
+    font-size: 4rem
+    color: variables.$light-color
+    margin-left: -5px
+    transition: .3s
+
+    &.active 
+        transform: rotate(180deg)
+
+%wrapper-style 
+  display: grid 
+  grid-template-rows: 0fr
+  overflow: hidden
+  transition: .3s 
+  
+  &.active 
+      grid-template-rows: 1fr
+      background-color: variables.$bg-dark-color
+      border-radius: 36px
+      padding: 40px     
+
+  .expandable
+    min-height: 0

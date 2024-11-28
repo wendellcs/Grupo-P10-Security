@@ -22,7 +22,6 @@ export default function RoutesApp(){
             {/* Not Found Page */}
             <Route path="/*" element={<NotFound/>}/>
             {/* Private */}
-
         </Routes>
   
     )
