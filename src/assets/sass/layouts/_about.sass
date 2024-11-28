@@ -22,6 +22,14 @@
         border-radius: 36px
         margin: 0 auto 100px auto
 
+        @include utilities.responsive(380px)
+            padding: 30px 5px
+            border-radius: 0 
+
+        @include utilities.responsive(290px)
+            .wrapper.active
+                padding: 40px 10px !important
+
         &-values 
             .value-box 
                 cursor: pointer

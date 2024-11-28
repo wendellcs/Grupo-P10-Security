@@ -25,7 +25,7 @@ export default function About(){
                 <h2 className='section-title'>Nossos valores</h2>
 
                 <div className='about-page-content'>
-                    <h3 className='block-title'>No que acreditamos</h3>
+                    <h3 className='block-title'>Em que acreditamos?</h3>
 
                     <div className="about-page-content-values">
                         {values.map((value) => {

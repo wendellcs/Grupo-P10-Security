@@ -19,6 +19,14 @@
         .title-container
             @extend %dropdown-style
 
+        @include utilities.responsive(740px)
+            padding: 30px 5px
+            border-radius: 0 
+
+        @include utilities.responsive(290px)
+            .wrapper.active
+                padding: 40px 10px !important
+
         &-services 
             .service-box 
                 cursor: pointer
