@@ -1,20 +1,23 @@
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
+import Header from "../../components/Header";
+import ReasonsToChoose from "../../components/ReasonsToChoose";
+import Footer from "../../components/Footer";
 import '../../assets/sass/layouts/_home.sass'
 
 import securityImage from './../../assets/images/security.png'
 import bodyguard from './../../assets/images/bodyguard.png'
 import armedScolt from './../../assets/images/armed-scolt.png'
 
-import Header from "../../components/Header";
-import ReasonsToChoose from "../../components/ReasonsToChoose";
-import Footer from "../../components/Footer";
-import { Link } from 'react-router-dom';
-
 export default function Home(){
+    const user = useSelector(state => state.users)
+
     return (
         <main id="main">
             <Header />
 
-            <section className="banner">
+            <section className="banner" onClick={() => showUser()}>
                 <div className="banner-container">
                     <div className="banner-container-content">
                         <h1 className="banner-container-content-title">Grupo P10</h1>
