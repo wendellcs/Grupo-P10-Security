@@ -1,6 +1,5 @@
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import '../../assets/sass/layouts/_services.sass'
 
 import services from './servicesData.js'
 import { useState } from 'react'

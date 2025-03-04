@@ -2,8 +2,6 @@ import { RiArrowDropDownLine } from 'react-icons/ri'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-import '../../assets/sass/layouts/_about.sass'
-
 import values from './valuesData'
 import { useState } from 'react'
 export default function About(){

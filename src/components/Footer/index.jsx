@@ -3,8 +3,6 @@ import { FaLinkedin, FaFacebook  } from "react-icons/fa";
 import { BsFillThreadsFill } from "react-icons/bs";
 import { Link } from "react-router-dom"
 
-import '../../assets/sass/components/_footer.sass'
-
 import shortFooterBg from './../../assets/images/short-footer-bg.png';
 import footerBg from './../../assets/images/footer-bg.png';
 

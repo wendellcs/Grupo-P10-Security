@@ -1,6 +1,5 @@
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
-import '../../assets/sass/layouts/_notFound.sass'
 import logo from '../../assets/images/p10-logo.png'
 import { Link } from "react-router-dom"
 

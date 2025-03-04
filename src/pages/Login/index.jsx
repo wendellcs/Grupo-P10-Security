@@ -7,7 +7,6 @@ import { auth } from '../../services/firebase/firebaseConnection.js'
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import './../../assets/sass/layouts/_login.sass'
 
 export default function Login(){
     const [email, setEmail] = useState('') 

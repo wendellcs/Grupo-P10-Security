@@ -6,6 +6,7 @@ import SignUp from "../../pages/SignUp";
 import Contact from "../../pages/Contact";
 import About from "../../pages/About";
 import Services from "../../pages/Services";
+import Products from "../../pages/Products";
 
 import NotFound from "../../pages/NotFound";
 
@@ -18,6 +19,7 @@ export default function RoutesApp(){
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/services" element={<Services/>}/>
+            <Route path="/products" element={<Products/>}/>
 
             {/* Not Found Page */}
             <Route path="/*" element={<NotFound/>}/>

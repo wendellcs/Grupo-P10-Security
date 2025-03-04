@@ -1,4 +1,3 @@
-import '../../assets/sass/layouts/_contact.sass'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 

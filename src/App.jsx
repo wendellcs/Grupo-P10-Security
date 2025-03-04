@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import RoutesApp from "./services/route/routes.jsx"
 import store from './services/redux/store.js'
 
-import './assets/sass/_reset.sass'
+import './assets/sass/_main.sass'
 function App() {
   useEffect(() => {
     document.title = 'Grupo P10 | Security'

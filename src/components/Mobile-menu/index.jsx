@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import '../../assets/sass/components/_menu-icon.sass'
-import '../../assets/sass/components/_mobile-menu.sass'
 import { Link } from 'react-router-dom'
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin, FaFacebook  } from "react-icons/fa";

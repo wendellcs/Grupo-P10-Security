@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin, FaFacebook  } from "react-icons/fa";
 import { BsFillThreadsFill } from "react-icons/bs";
-import '../../assets/sass/components/_header.sass'
 
 import MobileMenu from '../Mobile-menu';
 

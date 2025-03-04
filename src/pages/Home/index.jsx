@@ -4,11 +4,12 @@ import { useSelector } from 'react-redux';
 import Header from "../../components/Header";
 import ReasonsToChoose from "../../components/ReasonsToChoose";
 import Footer from "../../components/Footer";
-import '../../assets/sass/layouts/_home.sass'
 
 import securityImage from './../../assets/images/security.png'
 import bodyguard from './../../assets/images/bodyguard.png'
 import armedScolt from './../../assets/images/armed-scolt.png'
+import bgImage from './../../assets/images/bg-image.png'
+import bgCameras from './../../assets/images/security-cams.png'
 
 export default function Home(){
     const user = useSelector(state => state.users)
@@ -17,8 +18,8 @@ export default function Home(){
         <main id="main">
             <Header />
 
-            <section className="banner" onClick={() => showUser()}>
-                <div className="banner-container">
+            <section className="banner" onClick={() => showUser()} style={{ background: `url(${bgImage}) no-repeat` }}>
+                <div className="banner-container" style={{ background: `url(${bgCameras}) no-repeat` }}>
                     <div className="banner-container-content">
                         <h1 className="banner-container-content-title">Grupo P10</h1>
 

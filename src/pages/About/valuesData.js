@@ -11,7 +11,7 @@ const values = [
     },
     {
         name: 'Inovação e Adaptação',
-        description: ' Capacidade de se reinventar ao longo dos séculos.',
+        description: 'Capacidade de se reinventar ao longo dos séculos.',
         id: 2
     },
     {

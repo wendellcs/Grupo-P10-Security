@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import { reasons } from './reasons-data.js'
-import '../../assets/sass/components/_reasonsToChoose.sass'
+
 export default function ReasonsToChoose(){
     const [reasonTitle, setReasonTitle] = useState(reasons[0].title)
     const [reasonDescription, setReasonDescription] = useState(reasons[0].description)
