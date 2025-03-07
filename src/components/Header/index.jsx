@@ -32,6 +32,7 @@ export default function Header({shortHeader}){
                         <li><Link to={'/about'} className="link">Sobre nós</Link></li>
                         <li><Link to={'/contact'} className="link">Contato</Link></li>
                         <li><Link to={'/services'} className="link">Serviços</Link></li>
+                        <li><Link to={'/products'} className="link">Produtos</Link></li>
                     </ul>
                 </nav>
 

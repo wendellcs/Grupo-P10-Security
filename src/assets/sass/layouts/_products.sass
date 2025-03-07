@@ -1,0 +1,35 @@
+@use '../base/_variables'
+
+#products-page
+    width: 100%
+    padding: 0 120px
+
+    h1 
+        margin-top: 50px
+
+    .row 
+        display: flex
+        flex-direction: column
+        margin-top: 50px
+
+        .products-container
+            display: flex
+            gap: 45px
+            margin-top: 30px
+
+            .product 
+                border: 1px solid variables.$secondary-color
+                background-color: variables.$bg-dark-color
+                padding: 20px 0
+                border-radius: 16px
+                img 
+                    margin: 5px auto
+                    display: block
+                    width: 200px
+                    height: 180px
+
+                &-description 
+                    padding: 10px 5px
+
+                    p 
+                        margin-top: 15px

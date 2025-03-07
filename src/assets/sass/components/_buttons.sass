@@ -1,4 +1,5 @@
 @use '../base/_variables'
+@use '../base/_typography'
 @use '../base/_utilities'
 
 .btn
@@ -32,4 +33,11 @@
 
         &.getInTouch
             margin: 20px auto 0 auto
+
+    &.about 
+        background: transparent 
+        display: block
+        @include utilities.center-elements(center, center)
+        font-size: typography.$text-size
+        margin: 15px auto 0 auto
      
