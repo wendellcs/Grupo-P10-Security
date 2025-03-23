@@ -5,7 +5,7 @@ import productsData from './productData'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
-export default function Products(){
+export default function ProductStore(){
 
     return (
         <div className='container'>
@@ -27,7 +27,7 @@ export default function Products(){
                                         </p>
                                     </div>
 
-                                    <Link className='btn about' to={`./product-${p.id}`}>Saiba mais</Link>
+                                    <Link className='btn about' to={`./product/${p.id}`}>Saiba mais</Link>
                                 </div>
                             )
                         })}

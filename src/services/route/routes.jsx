@@ -6,7 +6,8 @@ import SignUp from "../../pages/SignUp";
 import Contact from "../../pages/Contact";
 import About from "../../pages/About";
 import Services from "../../pages/Services";
-import Products from "../../pages/Products";
+import ProductStore from "../../pages/ProductStore";
+import Product from "../../pages/Product";
 
 import NotFound from "../../pages/NotFound";
 
@@ -19,10 +20,11 @@ export default function RoutesApp(){
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/services" element={<Services/>}/>
-            <Route path="/products" element={<Products/>}/>
+            <Route path="/store" element={<ProductStore/>}/>
+            <Route path="/store/product/:id" element={<Product/>}/>
 
             {/* Not Found Page */}
-            <Route path="/*" element={<NotFound/>}/>
+            {/* <Route path="/*" element={<NotFound/>}/> */}
             {/* Private */}
         </Routes>
   
